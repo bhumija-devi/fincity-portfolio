@@ -122,3 +122,8 @@ align-self: flex-end;
         }
         
 }
+
+.error{
+    color: red;
+    font-size: 12px;
+}

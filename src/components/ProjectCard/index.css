@@ -17,16 +17,16 @@ align-self: stretch;
 margin-bottom: 10px;
 }
 .project-dis-on-card {
-    color: var(--font-medium-emphasis, #828282);
-    font-family: 'Nunito', sans-serif; /* Include a generic sans-serif font as a fallback */
+    color:  #828282;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
     max-height: 4.8em;
-    line-height: 1.2em; /* 27px */
-    margin-bottom: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-weight: 400;       
+    line-height: 1.2em;      
+    margin-bottom: 15px;     
+  overflow: hidden;        
+  text-overflow: ellipsis; 
   }
 .view-project-btn{
     color: var(--font-high-emphasis, #25282B);

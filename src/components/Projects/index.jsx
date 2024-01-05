@@ -14,7 +14,10 @@ function Projects() {
       <li className='project-card-con'>
        <div className="card-dis-con">
        <h3 className='project-name-on-card'>BookHub</h3>
-        <p className='project-dis-on-card'>It is a ecommerce app for Books</p>
+        <p className='project-dis-on-card'>Designed a comprehensive book management platform, inspired by Goodreads. Implemented advanced features such as login, home, bookshelves,
+search, and rating with React Router, React Rating Stars, React Select,
+and fetch APIs.
+</p>
         <a className="view-project-btn" rel="noopener noreferrer" href={'https://bookhubdevi.ccbp.tech/login'} target="_blank">View Project</a>
        </div>
        <img className='project-image' src="https://i.ibb.co/rwftdkR/Rectangle-1467.png" alt='BookHub'/>
@@ -30,7 +33,7 @@ function Projects() {
       <li className='project-card-con'>
        <div className="card-dis-con">
        <h3 className='project-name-on-card'>Planets</h3>
-        <p className='project-dis-on-card'>By Using React Slick Created this Planets Carousel</p>
+        <p className='project-dis-on-card'>By Using React Slick Created a Carousel to Showcase all the details of our Planets.</p>
         <a className="view-project-btn" rel="noopener noreferrer" href={'https://reactslickdevi.ccbp.tech/'} target="_blank">View Project</a>
        </div>
        <img className='project-image'  src="https://assets.ccbp.in/frontend/react-js/planets-app/jupiter-img.png" alt='PlanetsApp'/>

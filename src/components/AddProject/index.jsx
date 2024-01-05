@@ -4,10 +4,11 @@ import "./index.css";
 
 function AddProject() {
   const { addProject } = useProjectContext();
+  const [error,setError] = useState(false)
   const [project, setProject] = useState({
-    projectName: "portfolio",
-    projectLink: "portfolio.vercel.com",
-    projectDescription: "This is my portfolio",
+    projectName: "",
+    projectLink: "",
+    projectDescription: "",
   });
  
 
@@ -19,13 +20,19 @@ function AddProject() {
   };
 
   const handleSubmit = () => {
-    addProject(project);
-    // Reset the form or perform other actions after adding the project
-    setProject({
-      projectName: "",
-      projectLink: "",
-      projectDescription: "",
-    });
+if (project.projectName==='' || project.projectLink==='' || project.projectDescription===''){
+setError(true)
+}else{
+  setError(false)
+  addProject(project);
+  setProject({
+    projectName: "",
+    projectLink: "",
+    projectDescription: "",
+  });
+}
+       
+   
   };
 
   return (
@@ -43,7 +50,7 @@ function AddProject() {
             className="input-feild"
             type="text"
             id="projectName"
-            placeholder="Portfolio"
+            placeholder="Devi Portfolio"
             onChange={handleInputChange}
           />
         </div>
@@ -60,6 +67,7 @@ function AddProject() {
             type="text"
             id="projectLink"
             onChange={handleInputChange}
+            placeholder="https://fincity-portfolio-dun.vercel.app/"
           />
         </div>
 
@@ -79,6 +87,8 @@ function AddProject() {
             onChange={handleInputChange}
           />
         </div>
+
+        {error &&<p className="error"> Please Provide All Details </p>}
 
         <button type="button" className="add-btn" onClick={handleSubmit}>
           Add
