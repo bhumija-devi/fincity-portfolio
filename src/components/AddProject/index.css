@@ -1,0 +1,124 @@
+.add-project-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #E8ECF4;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+
+.add-project-head{
+    color: var(--font-high-emphasis, #25282B);
+    text-align: center;
+    
+    /* title / h2 */
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 150% */
+margin-bottom: 20px;
+}
+
+.label-input-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+.label-name{
+    color: var(--font-high, #25282B);
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 8px;
+}
+
+.input-feild{
+    border-radius: 8px;
+border: 1px solid #E8ECF4;
+background: var(--bg-white, #FFF);
+width: 100%;
+height: 40px;
+padding-left: 10px;
+}
+.textareabox{
+    border-radius: 8px;
+border: 1px solid #E8ECF4;
+background: var(--bg-white, #FFF);
+width: 100%;
+height: 160px;
+padding-left: 10px;
+padding-top: 8px;
+}
+
+.add-btn{
+    color: var(--font-high-emphasis, #25282B);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+border-radius: 8px;
+background: var(--brand-yellow, #FDC435);
+display: flex;
+padding: 8px 24px;
+align-items: flex-start;
+border: none;
+align-self: flex-end;
+}
+
+@media screen and (max-width: 756px){
+    .add-project-con{
+        padding-top: 20px;
+    }
+    
+    .add-project-head{
+        font-size: 38px;
+        line-height: 52px; /* 150% */
+    margin-bottom: 15px;
+    }
+   
+}
+
+@media screen and (max-width: 480px){
+    .add-project-con{
+        padding: 20px;
+    }
+    form{
+        max-width: 250px;
+    }
+    .input-feild{
+        height: 30px;
+        }
+        .add-project-head{
+            font-size: 28px;
+       
+        }
+
+        .textareabox{
+
+        height: 120px;
+        }
+        .add-btn{
+            font-size: 14px;
+            padding: 8px 18px;
+        }
+        .label-name{
+
+        font-size: 14px;
+       
+        }
+        
+}

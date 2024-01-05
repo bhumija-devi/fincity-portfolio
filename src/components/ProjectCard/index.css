@@ -1,0 +1,91 @@
+.project-card-con{
+display: flex;
+width: 100%;
+height: 400px;
+background-color: white;
+margin-bottom: 30px;
+}
+
+.project-name-on-card{
+    color: var(--font-high-emphasis, #25282B);
+font-family: Playfair Display;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 60px */
+align-self: stretch;
+margin-bottom: 10px;
+}
+.project-dis-on-card {
+    color: var(--font-medium-emphasis, #828282);
+    font-family: 'Nunito', sans-serif; /* Include a generic sans-serif font as a fallback */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    max-height: 4.8em;
+    line-height: 1.2em; /* 27px */
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+.view-project-btn{
+    color: var(--font-high-emphasis, #25282B);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+border-radius: 24px;
+border: 1px solid var(--font-high-emphasis, #25282B);
+padding: 8px 24px;
+}
+
+.project-image{
+    width: 50%;
+    background-color: rgb(222, 239, 187);
+}
+.card-dis-con{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.even .project-image{
+order: 1;
+}
+.even .card-dis-con{
+    order: 2;
+}
+
+.odd .project-image{
+    order: 2;
+    }
+    .odd .card-dis-con{
+        order: 1;
+    }
+
+    @media screen and (max-width: 756px) {
+        .project-card-con{
+            margin: 15px;
+            height: 200px;
+
+            }
+
+            .project-name-on-card{
+                font-size: 20px;
+            }
+            .project-dis-on-card{
+                font-size: 14px;
+            }
+            .view-project-btn{
+
+            font-size: 14px;
+            line-height: 100%; /* 27px */
+            border-radius: 18px;
+            border: 1px solid var(--font-high-emphasis, #25282B);
+            padding: 8px 16px;
+            }
+    }
